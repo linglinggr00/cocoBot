@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "972578164970",
+    "firebase_url": "https://fir-crud-example-e19c3.firebaseio.com",
+    "project_id": "fir-crud-example-e19c3",
+    "storage_bucket": "fir-crud-example-e19c3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:972578164970:android:8f62ca0655ad682184c793",
+        "android_client_info": {
+          "package_name": "com.linglinggr00.cocobot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "972578164970-r3u0c2rm8kqr4se8vgl30difs96etcvo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5O7Elbh6SZ6-LxGhEjfFSlIkkgKzbVJ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "972578164970-r3u0c2rm8kqr4se8vgl30difs96etcvo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:972578164970:android:c41f69d987860fac84c793",
+        "android_client_info": {
+          "package_name": "com.tinatang.firebase_crud_example"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "972578164970-r3u0c2rm8kqr4se8vgl30difs96etcvo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5O7Elbh6SZ6-LxGhEjfFSlIkkgKzbVJ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "972578164970-r3u0c2rm8kqr4se8vgl30difs96etcvo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
