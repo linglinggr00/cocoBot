@@ -14,7 +14,14 @@ import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.view.animation.BounceInterpolator;
+import android.view.animation.LinearInterpolator;
+import android.view.animation.RotateAnimation;
+import android.view.animation.TranslateAnimation;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -98,15 +105,37 @@ public class MainActivity extends AppCompatActivity implements EasyPermissions.P
         System.out.println(Uid);
 
         //停止錄音＆轉檔
+        /*
         Button btn = findViewById(R.id.btn);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 stopRecord();
             }
-        });
+        });*/
 
         textView = findViewById(R.id.showText);
+
+        ImageView moon = findViewById(R.id.moon);
+        // 動畫設定 (指定旋轉動畫)
+        Animation am = new RotateAnimation(0, 360, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
+        // 動畫開始到結束的執行時間 (1000 = 1 秒)
+        am.setDuration( 8000 );
+        // 動畫重複次數 (Animation.INFINITE表示一直重複)
+        am.setRepeatCount(Animation.INFINITE);
+        // 圖片配置動畫
+        moon.setAnimation(am);
+        // 動畫開始
+        am.startNow();
+
+        ImageView coco = findViewById(R.id.coco);
+        TranslateAnimation alphaAnimation2 = new TranslateAnimation(0f, 0F, 0F, 85F);
+        alphaAnimation2.setDuration(1000);  //设置时间
+        alphaAnimation2.setRepeatCount(Animation.INFINITE);
+        alphaAnimation2.setRepeatMode(Animation.REVERSE);
+        //alphaAnimation2.setInterpolator(new BounceInterpolator());//动画结束的时候弹起
+        coco.setAnimation(alphaAnimation2);
+        alphaAnimation2.start();
 
     }
 
@@ -131,7 +160,7 @@ public class MainActivity extends AppCompatActivity implements EasyPermissions.P
                 break;
             case DATA_GET:
                 Toast.makeText(this, "抓取資料成功", Toast.LENGTH_SHORT).show();
-                timeSleep();
+                //timeSleep();
                 snowStart();
                 break;
 

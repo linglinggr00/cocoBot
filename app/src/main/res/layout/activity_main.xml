@@ -4,7 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#0E1390"
     tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/star"
+        android:padding="20dp"/>
+
+    <ImageView
+        android:id="@+id/moon"
+        android:layout_width="465dp"
+        android:layout_height="465dp"
+        android:src="@drawable/moon"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="480dp"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -12,39 +31,39 @@
 
         <ImageView
             android:id="@+id/mood"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:layout_margin="10dp"
-            android:background="@drawable/ic_normal_24"/>
+            android:background="@drawable/normal"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:src="@drawable/textarea"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="90dp"/>
 
         <TextView
             android:id="@+id/showText"
-            android:layout_width="match_parent"
+            android:layout_width="250dp"
             android:layout_height="60dp"
-            android:text="helloWorld\nHappy"
-            android:textSize="20sp"
+            android:text="你好，我是Coco\n歡迎和我聊聊"
+            android:textColor="#000000"
+            android:textSize="18sp"
             android:gravity="center"
             android:layout_centerHorizontal="true"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="110dp"/>
+            android:layout_marginTop="100dp"/>
 
         <ImageView
             android:id="@+id/coco"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="180dp"
+            android:layout_height="268.77dp"
             android:layout_centerHorizontal="true"
+            android:src="@drawable/cocobear"
             android:layout_below="@+id/showText"
-            android:layout_marginTop="80dp"
-            android:background="@color/colorGray"/>
-
-        <Button
-            android:id="@+id/btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="STOP"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="60dp"/>
+            android:layout_marginTop="40dp"/>
 
     </RelativeLayout>
 

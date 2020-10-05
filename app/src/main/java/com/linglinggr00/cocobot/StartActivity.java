@@ -94,7 +94,7 @@ public class StartActivity extends AppCompatActivity implements EasyPermissions.
         nextBtn = findViewById(R.id.next);
 
         nextBtn.setText("已新增身份");
-        nextBtn.setBackgroundColor(getColor(R.color.colorGray));
+        nextBtn.setBackgroundResource(R.drawable.button_white);
 
         init();
 
@@ -122,7 +122,7 @@ public class StartActivity extends AppCompatActivity implements EasyPermissions.
                 break;
             case RECORD_UPLOAD:
                 nextBtn.setText("開始聊天");
-                nextBtn.setBackgroundColor(getColor(R.color.colorGreen));
+                nextBtn.setBackgroundResource(R.drawable.button_green);
                 init();
                 break;
 

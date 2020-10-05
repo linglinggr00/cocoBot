@@ -46,7 +46,7 @@ public class RecordingThread {
     }
 
     public void startRecording() {
-        detector.setSensitivity("0.425");
+        detector.setSensitivity("0.43");
         //detector.setAudioGain(1);
         detector.applyFrontend(true);
 
